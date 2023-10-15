@@ -1,8 +1,9 @@
 {
-  "name": "web-ui",
+  "name": "project-manager-admin-dahsboard",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "homepage": "https://mahdi-hazrati.github.io/project-manager-admin-dashboard/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
