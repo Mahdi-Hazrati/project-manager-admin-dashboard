@@ -1,0 +1,119 @@
+.sidebar {
+    color: #f1f1f1;
+    background: #060606;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 20px;
+    position: relative;
+    border-radius: 0px 0px 0px 0px;
+    transition: 0.2s;
+}
+
+.sidebar > .collapse {
+    background-color: #333;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 100px;
+    font-size: 22px;
+    border-radius: 10px 0px 0px 10px;
+    user-select: none;
+    transition: 0.2s;
+}
+.sidebar > .collapse:hover {
+    cursor: pointer;
+    filter: brightness(95%);
+}
+
+.sidebar.collapse-menu {
+    width: 100px;
+    font-size: 12px;
+}
+
+/* menu and menu items */
+.sidebar > .menu {
+    width: 100%;
+    flex: 8;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 0px;
+    overflow-y: scroll;
+}
+.sidebar > .menu::-webkit-scrollbar {
+    width: 10px;
+    background-color: #444;
+    display: none;
+}
+.sidebar > .menu::-webkit-scrollbar-thumb {
+    width: 10px;
+    background: #f1f1f1;
+    border-radius: 0px;
+}
+.sidebar > .Link,
+a {
+    color: #f1f1f1 !important;
+    text-decoration: none;
+    background-color: crimson;
+    width: 90%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.sidebar > .menu > .Link > .menu-item {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    transition: 0.2s;
+    height: 50px;
+    width: 100%;
+    border-right: 4px solid crimson;
+    padding-right: 15px;
+
+}
+.sidebar > .menu > .Link > .menu-item:hover {
+    background-color: #444;
+    cursor: pointer;
+    user-select: none;
+}
+/* top and bottom of sidebar */
+.sidebar > .top,
+.bottom {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.sidebar > .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.sidebar > .bottom > .logout{
+    background-color: darkred;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size:10px;
+    user-select: none;
+    transition: 0.2s;
+}
+.sidebar > .bottom > .logout:hover{
+    cursor: pointer;
+}
